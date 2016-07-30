@@ -16,7 +16,7 @@ def findObject(oid):
 def updateObject(oid):
     #DB Update/Upsert code goes here
     my_update = loads(request.get_data())
-    my_update['name'] = oid
+    my_update['a'] = oid
     update_object(my_update)
     print 'I got a post request!'
     return ""
